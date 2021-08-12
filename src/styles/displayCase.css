@@ -1,0 +1,49 @@
+.display-case {
+    background-color: var(--background-secondary);
+    border-radius: 5px;
+    color: var(--primary);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.display-case * {
+    display: block;
+}
+
+.display-case i {
+    display: inline-block;
+    border-radius: 60px;
+    padding: 0.3em 0.4em;
+    width: fit-content;
+    font-size: 40px;
+    background-color: var(--background);
+    color: var(--secondary);
+}
+
+.display-case-img-wrapper {
+    background-color: var(--background);
+    border-radius: 60px;
+}
+
+.display-case-img {
+    width: 60px;
+    margin: 0 auto;
+    padding: 0.4em 0.5em;
+    color: var(--secondary);
+    border-radius: 60px;
+
+    /* Filter generated with this tool https://codepen.io/sosuke/pen/Pjoqqp to var(--secondary) #709ff5*/
+    filter: invert(73%) sepia(88%) saturate(3134%) hue-rotate(192deg) brightness(95%) contrast(101%);
+}
+
+.display-case-title {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.display-case-description {
+    font-size: 15px;
+}

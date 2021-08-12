@@ -1,6 +1,30 @@
 :root {
     --background: #20222b;
+    --background-secondary: #3a3f58;
     --primary: #14ad42;
+    --secondary: #709ff5;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #34384b;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--background-secondary);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -22,7 +46,6 @@ code {
     display: block;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
     text-align: center;
 }
 

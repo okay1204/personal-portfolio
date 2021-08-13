@@ -126,7 +126,7 @@ class App extends React.Component {
                     <DisplayCase
                         title='Database Management'
                         description="I'm very familiar with SQLite and PostgreSQL, which almost all my projects use."
-                        img='fas fa-robot'
+                        img='fas fa-server'
                     />
                 </div>
             </div>

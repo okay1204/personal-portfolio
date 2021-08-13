@@ -51,7 +51,7 @@ class App extends React.Component {
 
                 <h1>Languages</h1>
 
-                <div className='display-case-list'>
+                <div className='display-case-list languages'>
                     <DisplayCase
                         title='Python'
                         description="My go-to langauge for almost any project"
@@ -93,9 +93,40 @@ class App extends React.Component {
                         img='fas fa-terminal'
                     />
                     <DisplayCase
-                        title='More to come'
-                        description="I still plan on learning even more languages to expand my capabilties"
-                        img='fas fa-ellipsis-h'
+                        title='Docker'
+                        description="For deploying applications using containers to create an organized infrasructure"
+                        img='fab fa-docker'
+                    />
+                </div>
+
+                <h1>Skills</h1>
+                <h3>Example projects of these skills are below this section</h3>
+
+                <div className='display-case-list skills'>
+                    <DisplayCase
+                        title='Full Stack Web Development'
+                        description="I currently use React.js, Python's FastAPI, and PostgreSQL to make many of my websites."
+                        img='fas fa-globe'
+                    />
+                    <DisplayCase
+                        title='Web Scraping'
+                        description="I use Python along with asyncio in order to create speedy scripts to gather large amounts of data from websites."
+                        img='fas fa-table'
+                    />
+                    <DisplayCase
+                        title='Game Development'
+                        description="I've created an online multiplayer game with pygame, a Python library. I also have extensive experience in Minecraft plugins using Java."
+                        img='fas fa-gamepad'
+                    />
+                    <DisplayCase
+                        title='Chatbots'
+                        description="I specialize in Discord bots that serve many different purposes, from a fun economy game to a voice channel utility bot."
+                        img='fas fa-robot'
+                    />
+                    <DisplayCase
+                        title='Database Management'
+                        description="I'm very familiar with SQLite and PostgreSQL, which almost all my projects use."
+                        img='fas fa-robot'
                     />
                 </div>
             </div>

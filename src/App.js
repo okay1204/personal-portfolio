@@ -3,8 +3,14 @@ import 'animate.css/animate.min.css'
 
 import React from 'react'
 import DisplayCase from './components/displayCase.js'
+import ProjectCase from './components/projectCase.js'
 
 import CppIcon from './images/cppIcon.png'
+import Tetrium from './images/tetrium.png'
+import VoiceRoomsLogo from './images/voiceRoomsLogo.png'
+import CodeKingdomsModding from './images/codeKingdomsModding.png'
+import Tagger from './images/tagger.png'
+import TheHierarchy from './images/theHierarchy.png'
 
 const fullIntroTitle = 'Zackaria Ghanbari.exe'
 class App extends React.Component {
@@ -100,7 +106,6 @@ class App extends React.Component {
                 </div>
 
                 <h1>Skills</h1>
-                <h3>Example projects of these skills are below this section</h3>
 
                 <div className='display-case-list skills'>
                     <DisplayCase
@@ -127,6 +132,51 @@ class App extends React.Component {
                         title='Database Management'
                         description="I'm very familiar with SQLite and PostgreSQL, which almost all my projects use."
                         img='fas fa-robot'
+                    />
+                </div>
+
+                <h1>Projects/Achievements</h1>
+
+                <div className='display-case-list projects'>
+                    <ProjectCase 
+                        title='Tetrium'
+                        href='/projects/tetrium'
+                        skill='Game Development'
+                        description='A tetris game with a multiplayer twist to it. Developed by me and a friend.'
+                        img={Tetrium}
+                        date='November 13, 2020'
+                    />
+                    <ProjectCase 
+                        title='Voice Rooms'
+                        href='/projects/voice_rooms'
+                        skill='Chatbot'
+                        description="A handy Discord utility bot that can organize a Discord server's voice channels, used by thousands of members. Has a website with Discord oauth as well."
+                        img={VoiceRoomsLogo}
+                        date='September 29, 2020'
+                    />
+                    <ProjectCase 
+                        title='Tagger'
+                        href='/projects/tagger'
+                        skill='Chatbot'
+                        description="A fun Discord bot that allows you to reuse pre-recorded text messages."
+                        img={Tagger}
+                        date='July 18, 2020'
+                    />
+                    <ProjectCase 
+                        title='The Hierarchy'
+                        href='/projects/the_hierarchy'
+                        skill='Chatbot'
+                        description="An advanced Discord economy game about accumulating as much money as possible. Includes expenses and crime."
+                        img={TheHierarchy}
+                        date='April 12, 2020'
+                    />
+                    <ProjectCase 
+                        title='CK MODM Winner'
+                        href='/projects/voice_rooms'
+                        skill='Game Development'
+                        description="I won a competition twice in a row for the best Minecraft mod created on Code Kingdoms."
+                        img={CodeKingdomsModding}
+                        date='August 31, 2017'
                     />
                 </div>
             </div>

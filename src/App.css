@@ -48,6 +48,11 @@
     flex-basis: 30%;
 }
 
+.display-case-list.projects > * {
+    flex-basis: 40%;
+    height: 300px;
+}
+
 .display-case-list.languages > * {
     height: 150px;
 }

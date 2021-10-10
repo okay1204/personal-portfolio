@@ -1,0 +1,85 @@
+.intro-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.intro-title,
+.intro-underscore {
+    font-family: 'Source Code Pro', monospace;
+    color: #14c914;
+    font-size: min(12vw, 40px);
+    display: inline-block;
+    height: 12px;
+}
+
+.intro-underscore {
+    font-weight: 900;
+    animation: flash ease 1800ms infinite;
+    user-select: none;
+}
+
+.intro-subtitle {
+    font-size: min(8vw, 30px);
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+}
+
+.display-case-list {
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-case-list > * {
+    margin: 10px;
+    flex-basis: 30%;
+}
+
+.display-case-list.projects > * {
+    flex-basis: 40%;
+    height: 300px;
+}
+
+.display-case-list.languages > * {
+    height: 150px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .display-case-list.languages > * {
+        height: 200px;
+    }
+
+    .display-case-list.skills > * {
+        height: 280px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .display-case-list {
+        margin: 0;
+        justify-content: space-around;
+    }
+
+    .display-case-list > * {
+        margin: 10px;
+        flex-basis: 46%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .display-case-list > * {
+        margin: 10px;
+        flex-basis: 100%;
+    }
+}

@@ -11,6 +11,7 @@ import VoiceRoomsLogo from './images/voiceRoomsLogo.png'
 import CodeKingdomsModding from './images/codeKingdomsModding.png'
 import Tagger from './images/tagger.png'
 import TheHierarchy from './images/theHierarchy.png'
+import MinecraftCompass from './images/minecraftCompass.png'
 
 const fullIntroTitle = 'Zackaria Ghanbari.exe'
 class App extends React.Component {
@@ -139,6 +140,14 @@ class App extends React.Component {
 
                 <div className='display-case-list projects'>
                     <ProjectCase 
+                        title='Manhunt Plugin'
+                        href='/projects/manhunt_plugin'
+                        skill='Game Development'
+                        description="A Minecraft plugin that is similar to one that the popular Youtuber Dream uses."
+                        img={MinecraftCompass}
+                        date='July 13, 2021'
+                    />
+                    <ProjectCase 
                         title='Tetrium'
                         href='/projects/tetrium'
                         skill='Game Development'
@@ -172,7 +181,7 @@ class App extends React.Component {
                     />
                     <ProjectCase 
                         title='CK MODM Winner'
-                        href='/projects/voice_rooms'
+                        href='/projects/ck_modm'
                         skill='Game Development'
                         description="I won a competition twice in a row for the best Minecraft mod created on Code Kingdoms."
                         img={CodeKingdomsModding}

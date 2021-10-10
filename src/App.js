@@ -12,6 +12,7 @@ import CodeKingdomsModding from './images/codeKingdomsModding.png'
 import Tagger from './images/tagger.png'
 import TheHierarchy from './images/theHierarchy.png'
 import MinecraftCompass from './images/minecraftCompass.png'
+import AdventOfCode from './images/adventOfCode.png'
 
 const fullIntroTitle = 'Zackaria Ghanbari.exe'
 class App extends React.Component {
@@ -146,6 +147,14 @@ class App extends React.Component {
                         description="A Minecraft plugin that is similar to one that the popular Youtuber Dream uses."
                         img={MinecraftCompass}
                         date='July 13, 2021'
+                    />
+                    <ProjectCase 
+                        title='Advent of Code'
+                        href='/projects/advent_of_code'
+                        skill='Algorithms'
+                        description="I've participated in the Advent of Code in 2020 whilst competing against my friends."
+                        img={AdventOfCode}
+                        date='December 1, 2020'
                     />
                     <ProjectCase 
                         title='Tetrium'

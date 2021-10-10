@@ -4,7 +4,7 @@ function ProjectCase({title, href, skill, description, img, date}) {
     return (
         <a className='project-case' href={href} rel='alternate'>
             <div className='project-case-img-wrapper'>
-                <img className='project-case-img' src={img}/>
+                <img className='project-case-img' src={img} alt={title}/>
             </div>
             <div className='project-case-text'>
                 <span className='project-case-skill'>{skill}</span>

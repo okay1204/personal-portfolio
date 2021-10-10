@@ -13,6 +13,7 @@ import Tagger from './images/tagger.png'
 import TheHierarchy from './images/theHierarchy.png'
 import MinecraftCompass from './images/minecraftCompass.png'
 import AdventOfCode from './images/adventOfCode.png'
+import MapleElectronics from './images/mapleElectronics.png'
 
 const fullIntroTitle = 'Zackaria Ghanbari.exe'
 class App extends React.Component {
@@ -163,6 +164,14 @@ class App extends React.Component {
                         description='A tetris game with a multiplayer twist to it. Developed by me and a friend.'
                         img={Tetrium}
                         date='November 13, 2020'
+                    />
+                    <ProjectCase 
+                        title='Maple Electronics'
+                        href='/projects/maple_electronics'
+                        skill='Web Development'
+                        description="I've redesigned an electronics website to look more modern."
+                        img={MapleElectronics}
+                        date='October 1, 2020'
                     />
                     <ProjectCase 
                         title='Voice Rooms'

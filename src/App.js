@@ -159,7 +159,7 @@ class App extends React.Component {
                         title='Voice Rooms'
                         href='/projects/voice_rooms'
                         skill='Chatbot'
-                        description="A handy Discord utility bot that can organize a Discord server's voice channels, used by thousands of members. Has a website with Discord oauth as well."
+                        description="A handy Discord utility bot that can organize a Discord server's voice channels, used by thousands of members. Has a website with Discord OAuth as well."
                         img={VoiceRoomsLogo}
                         date='September 29, 2020'
                     />

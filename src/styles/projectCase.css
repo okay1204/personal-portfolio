@@ -48,14 +48,22 @@
     margin-top: 10px;
 }
 
-@media only screen and (max-width: 1000px) {
-    .display-case {
+@media only screen and (max-width: 650px) {
+    .project-case {
         flex-direction: column;
-        justify-content: center;
+        height: fit-content;
     }
 
-    .display-case-text {
-        text-align: center;
-        margin-left: 0;
+    .project-case-img-wrapper {
+        width: min(70%, 300px);
+        margin-bottom: 20px;
+    }
+
+    .project-case-img {
+        width: 100%;
+    }
+
+    .project-case-text {
+        margin: 10px;
     }
 }

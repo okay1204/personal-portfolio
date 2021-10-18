@@ -53,11 +53,17 @@
     height: 150px;
 }
 
+@media only screen and (max-width: 1600px) {
+    .display-case-list.projects > * {
+        flex-basis: 100%;
+    }
+}
+
 @media only screen and (max-width: 1000px) {
     .display-case-list.languages > * {
         height: 200px;
     }
-
+    
     .display-case-list.skills > * {
         height: 280px;
     }
@@ -68,7 +74,7 @@
         margin: 0;
         justify-content: space-around;
     }
-
+    
     .display-case-list > * {
         margin: 10px;
         flex-basis: 46%;
@@ -76,8 +82,14 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 650px) {
+    .display-case-list.projects > * {
+        height: fit-content;
+    }
+}
 
+@media only screen and (max-width: 500px) {
+    
     .display-case-list > * {
         margin: 10px;
         flex-basis: 100%;

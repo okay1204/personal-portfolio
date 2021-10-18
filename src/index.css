@@ -4,6 +4,7 @@
     --background-secondary-hover: #45495f;
     --primary: #14ad42;
     --secondary: #709ff5;
+    --secondary-hover: #394e75;
 }
 
 ::-webkit-scrollbar {

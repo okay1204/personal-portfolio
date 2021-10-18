@@ -15,6 +15,8 @@ import MinecraftCompass from '../images/minecraftCompass.png'
 import AdventOfCode from '../images/adventOfCode.png'
 import MapleElectronics from '../images/mapleElectronics.png'
 
+import NavBar from '../components/navBar.js'
+
 const FULL_INTRO_TITLE = 'Zackaria Ghanbari.exe'
 class Home extends React.Component {
 
@@ -47,6 +49,8 @@ class Home extends React.Component {
     render() {
         return (
             <div className="home body">
+                <NavBar />
+
                 <div className='intro-wrapper'>
                     <div>
                         <h1 className='intro-title'>{this.state.introTitle}</h1>
@@ -57,7 +61,7 @@ class Home extends React.Component {
     
                 <hr />
     
-                <h1>Languages</h1>
+                <h1 id='languages'>Languages</h1>
     
                 <div className='display-case-list languages'>
                     <DisplayCase
@@ -107,7 +111,7 @@ class Home extends React.Component {
                     />
                 </div>
     
-                <h1>Skills</h1>
+                <h1 id='skills'>Skills</h1>
     
                 <div className='display-case-list skills'>
                     <DisplayCase
@@ -137,7 +141,7 @@ class Home extends React.Component {
                     />
                 </div>
     
-                <h1>Projects/Achievements</h1>
+                <h1 id='projects'>Projects/Achievements</h1>
     
                 <div className='display-case-list projects'>
                     <ProjectCase 

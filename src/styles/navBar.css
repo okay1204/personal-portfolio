@@ -1,0 +1,19 @@
+nav {
+    display: flex;
+    background-color: var(--background-secondary);
+    border-radius: 0 5px;
+}
+
+.nav-link {
+    display: block;
+    text-decoration: none;
+    color: var(--secondary);
+    font-size: 20px;
+    padding: 10px;
+    transition: all ease-in 100ms;
+    cursor: pointer;
+}
+
+nav a:hover {
+    background-color: var(--secondary-hover);
+}

@@ -7,25 +7,26 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import NotFound from './pages/notFound.js'
 
-
 class App extends React.Component {
 
     render() {
         return (
             <Router>
-                <Switch>
-                    {routes.map(route => (
-                        <Route
-                            path={route.path}
-                            exact
-                            component={props => (
-                                <route.component {...props}/>
-                            )}
-                        />
-                    ))}
+                <div id='App'>
+                    <Switch>
+                        {routes.map(route => (
+                            <Route
+                                path={route.path}
+                                exact
+                                component={props => (
+                                    <route.component {...props}/>
+                                )}
+                            />
+                        ))}
 
-                    <Route component={NotFound} />
-                </Switch>
+                        <Route component={NotFound} />
+                    </Switch>
+                </div>
             </Router>
         )
     }

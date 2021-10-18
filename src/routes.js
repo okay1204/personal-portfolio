@@ -1,4 +1,7 @@
 import Home from './pages/home.js'
+import NotFound from './pages/notFound.js'
+
+import CK_MODM from './pages/projects/ck_modm.js'
 
 //recursively parses the routes
 const parseRoutes = (routes, base_url = '') => {
@@ -21,6 +24,16 @@ const routes = [
     {
         path: '/',
         component: Home
+    },
+    {
+        path: '/projects',
+        component: NotFound,
+        subRoutes: [
+            {
+                path: '/ck_modm',
+                component: CK_MODM
+            }
+        ]
     }
 ]
 

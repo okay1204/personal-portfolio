@@ -1,4 +1,5 @@
 import './App.css'
+import './styles/projects.css'
 import 'animate.css/animate.min.css'
 import routes from './routes'
 
